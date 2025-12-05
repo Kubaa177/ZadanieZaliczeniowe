@@ -1,6 +1,10 @@
 package com.example.zadaniezaliczeniowe;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +24,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        EditText imie = findViewById(R.id.imie);
+        EditText nazwisko = findViewById(R.id.nazwisko);
+        EditText iloscznakow = findViewById(R.id.iloscznakow);
+        CheckBox maleiwielkieliterycheckbox = findViewById(R.id.maleiwielkieliterycheckbox);
+        CheckBox cyfrycheckbox = findViewById(R.id.cyfrycheckbox);
+        CheckBox znakispecjalnecheckbox = findViewById(R.id.znakispecjalnecheckbox);
+        Button generujhaslobutton = findViewById(R.id.generujhaslobutton);
+        Button zatwierdzbutton = findViewById(R.id.zatwierdzbutton);
+        Spinner spinner = findViewById(R.id.spinner);
     }
 }
