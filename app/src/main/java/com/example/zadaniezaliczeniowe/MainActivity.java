@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        TextView wynikhasla = findViewById(R.id.wynikhasla);
         EditText imie = findViewById(R.id.imie);
         EditText nazwisko = findViewById(R.id.nazwisko);
         EditText iloscznakow = findViewById(R.id.iloscznakow);
@@ -33,5 +35,12 @@ public class MainActivity extends AppCompatActivity {
         Button generujhaslobutton = findViewById(R.id.generujhaslobutton);
         Button zatwierdzbutton = findViewById(R.id.zatwierdzbutton);
         Spinner spinner = findViewById(R.id.spinner);
+
+        String wygenerowanehaslo = "";
+
+        String malelitery = "abcdefghijklmnopqrstuvwxyz";
+        String duzelitery = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String liczby = "0123456789";
+        String znakispecjalne = "!@#$%^&*()_+-=.";
     }
 }
