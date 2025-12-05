@@ -1,6 +1,7 @@
 package com.example.zadaniezaliczeniowe;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -42,5 +43,12 @@ public class MainActivity extends AppCompatActivity {
         String duzelitery = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String liczby = "0123456789";
         String znakispecjalne = "!@#$%^&*()_+-=.";
+
+        String[] stanowiska = {"Kierownik", "Starszy programista", "Młodszy programista", "Tester"};
+        ArrayAdapter<CharSequence> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, stanowiska);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //.setAdapter(adapter);
+
+
     }
 }
